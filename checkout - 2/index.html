@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout &ndash; Total Purchase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="all.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="purchase">
+            <div class="purchase__left">
+                <img src="laptop.png" alt="laptop" class="purchase__item">
+
+                <h1 class="purchase__name">HP abc123 Brand New Intel i9-9900K</h1>
+                <p class="purchase__price">$200.99</p>
+            </div>
+
+            <div class="purchase__right">
+                <i class="fas fa-times purchase__close"></i>
+                <h2 class="purchase__title">Credit Card Checkout</h2>
+
+                <form action="#" class="form">
+                    <div class="form__field">
+                        <label for="name" class="form__label">cardholder's name</label>
+                        <input type="text" class="form__input" id="name" placeholder="Enter Name...">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="number" class="form__label">card number</label>
+                        <input type="text" class="form__input" id="number" placeholder="Enter card number...">
+                    </div>
+
+                    <div class="form__two">
+                        <div class="form__field">
+                            <label for="name" class="form__label">expiration date</label>
+                            <input type="date" class="form__input" id="name" placeholder="mm/yy">
+                            <i class="fas fa-calendar form__date"></i>
+                        </div>
+    
+                        <div class="form__field">
+                            <label for="number" class="form__label">cvv</label>
+                            <input type="text" class="form__input" id="number">
+                        </div>
+                    </div>
+
+                    <button class="btn">place order</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+$primary-1:#8e44ad;
+$primary-2:#9b59b6;
+
+
+*,
+*::before,
+*::after{
+    box-sizing: initial;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__cover{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: blur(4px) brightness(0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.signup{
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    @media only screen and (max-width:600px) {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: url(/cake.jpg) no-repeat center/cover;
+        background-color: gray;
+        background-blend-mode: multiply;
+        color: white;
+        padding: 2rem;
+    }
+
+    &__title{
+        margin-bottom: 0.5rem;
+    }
+
+    &__sub{
+        font-size: 1.3rem;
+    }
+
+    &__right{
+        padding: 2rem;
+        position: relative;
+    }
+
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $primary-1;
+        cursor: pointer;
+    }
+
+}
+
+.form{
+    display: grid;
+    grid-row-gap: 1rem;
+    &__title{
+        font-size:2rem;
+        font-weight: 400;
+        color: $primary-2;
+        text-align: center;
+    }
+
+    &__label{
+        display: block;
+        text-transform: uppercase;
+        color: gray;
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    &__input{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-bottom: 2px solid rgb(207, 203, 203);
+        background-color: white;
+        color: $primary-1;
+        outline: none;
+
+        &:active,&:focus{
+            border-color: $primary-1;
+        }
+
+        &:invalid{
+            outline: none;
+            border-color: red;
+        }
+
+    }
+}
+
+.btn{
+    border:none;
+    font-size: 1.1rem;
+    padding: 0.6em 1em;
+    background-color: $primary-2;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    &:hover{
+        background-color: $primary-1;
+    }
+
+    &--light{
+        border: 1px solid $primary-2;
+        background-color: white;
+        color: $primary-2;
+
+        &:hover{
+            color: white;
+            background-color: $primary-2;
+        }
+    }
+}
