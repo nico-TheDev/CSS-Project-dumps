@@ -28,7 +28,7 @@ color: #2c3e50;
     width: 270px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(7,50px);
+    grid-template-rows: repeat(6,50px);
     grid-gap: 5px;
     padding: 1rem;
     background: #a8ff78;  /* fallback for old browsers */
@@ -62,7 +62,7 @@ color: #2c3e50;
         width: 100%;
         height:100%;
         grid-column: 1/-1;
-        grid-row: 1/3;
+        grid-row: 1/2;
         padding: 1rem;
         font-size: 1.3rem;
         text-align: left;

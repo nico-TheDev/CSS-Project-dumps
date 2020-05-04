@@ -6,31 +6,34 @@
     <title>Calculator</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="calculator">
         <input type="text" class="calculator__input">
 
         <button class="clear">C</button>
-        <button class="square">^</button>
-        <button class="modulo">%</button>
-        <button class="divide">/</button>
-        <button class="seven">7</button>
-        <button class="eight">8</button>
-        <button class="nine">9</button>
-        <button class="multiply">X</button>
-        <button class="four">4</button>
-        <button class="five">5</button>
-        <button class="six">6</button>
-        <button class="subtract">-</button>
-        <button class="one">1</button>
-        <button class="two">2</button>
-        <button class="three">3</button>
-        <button class="add">+</button>
-        <button class="zero">0</button>
-        <button class="decimal">.</button>
+        <button data-input='**' class="square">^</button>
+        <button data-input='%' class="modulo">%</button>
+        <button data-input='/' class="divide">/</button>
+        <button data-input='7' class="seven">7</button>
+        <button data-input='8' class="eight">8</button>
+        <button data-input='9' class="nine">9</button>
+        <button data-input='*' class="multiply">X</button>
+        <button data-input='4' class="four">4</button>
+        <button data-input='5' class="five">5</button>
+        <button data-input='6' class="six">6</button>
+        <button data-input='-' class="subtract">-</button>
+        <button data-input='1' class="one">1</button>
+        <button data-input='2' class="two">2</button>
+        <button data-input='3' class="three">3</button>
+        <button data-input='+' class="add">+</button>
+        <button data-input='0' class="zero">0</button>
+        <button data-input='.' class="decimal">.</button>
         <button class="equal">=</button>
 
     </div>
+
+
 </body>
 </html>
