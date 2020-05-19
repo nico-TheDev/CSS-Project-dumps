@@ -15,5 +15,193 @@ html {
 body {
   line-height: 1.5;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 25rem;
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  position: relative;
+  z-index: 10;
+}
+
+.social__link {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: limegreen;
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+}
+
+.social__link::after {
+  content: attr(data-name);
+  position: absolute;
+  width: 15rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  color: black;
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  right: -150%;
+  z-index: -1;
+  padding-left: 5rem;
+  border: 2px solid currentColor;
+  opacity: 0;
+  -webkit-transition: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.social__link:hover::after {
+  right: -210%;
+  opacity: 1;
+}
+
+.social__link:active::after {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  content: 'share';
+  right: 0;
+  opacity: 0;
+}
+
+.social .fb {
+  background-color: blue;
+}
+
+.social .fb:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 255, 0.6);
+          box-shadow: 0 0 2rem rgba(0, 0, 255, 0.6);
+}
+
+.social .fb::after {
+  color: blue;
+  border-color: blue;
+}
+
+.social .twt {
+  background-color: cyan;
+}
+
+.social .twt:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(0, 255, 255, 0.6);
+          box-shadow: 0 0 2rem rgba(0, 255, 255, 0.6);
+}
+
+.social .twt::after {
+  color: cyan;
+  border-color: cyan;
+}
+
+.social .insta {
+  background: -webkit-gradient(linear, left top, right bottom, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
+  background: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.social .insta:hover::before {
+  opacity: 1;
+}
+
+.social .insta::after {
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  background-clip: text;
+  border-color: orangered;
+}
+
+.social .insta::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(#fd1d1d), to(#fcb045));
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -1;
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+  opacity: 0;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+}
+
+.social .yt {
+  background-color: red;
+}
+
+.social .yt:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(255, 0, 0, 0.6);
+          box-shadow: 0 0 2rem rgba(255, 0, 0, 0.6);
+}
+
+.social .yt::after {
+  color: red;
+}
+
+.social .tg {
+  background-color: skyblue;
+}
+
+.social .tg:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(135, 206, 235, 0.6);
+          box-shadow: 0 0 2rem rgba(135, 206, 235, 0.6);
+}
+
+.social .tg::after {
+  color: skyblue;
 }
 /*# sourceMappingURL=style.css.map */
