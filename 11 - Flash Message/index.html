@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Message</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="all.min.js"></script>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <p class="card__icon">
+                <i class="fas fa-check "></i>
+            </p>
+            <h2 class="card__title">Success</h2>
+            <p class="card__desc">Everything worked.</p>
+
+            <a href="#" class="card__btn">Continue</a>
+        </div>
+        <div class="card">
+            <p class="card__icon">
+                <i class="fas fa-times "></i>
+            </p>
+            <h2 class="card__title">Error</h2>
+            <p class="card__desc">Something went wrong.</p>
+
+            <a href="#" class="card__btn">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        const cardError = document.querySelector('.card:last-child');
+        const cardGreen = document.querySelector('.card:first-child');
+
+        cardError.addEventListener('mouseover',()=>{
+            cardGreen.classList.add('scaleDown');
+        });
+        cardError.addEventListener('mouseout',()=>{
+            cardGreen.classList.remove('scaleDown');
+        });
+    </script>
+</body>
+</html>
