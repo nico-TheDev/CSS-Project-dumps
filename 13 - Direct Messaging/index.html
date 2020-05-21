@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Messaging</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="all.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="inbox">
+            <div class="inbox__head">
+                <i class="fas fa-comment icon"></i>
+                <h2 class="app__logo">YourChat</h2>
+
+                <img src="./img/lucifer.png" alt="user" class="app__user">
+                <button class="app__theme"><i class="fas fa-moon icon"></i></button>
+            </div>
+            <form class="form">
+                <span class="form__searchicon"><i class="fas fa-search icon"></i></span>
+                <input type="text" placeholder="Search Conversation" class="form__input">
+                <button class="form__btn"><i class="fas fa-plus icon"></i></button>
+            </form>
+            <div class="inbox__body">
+                <div class="message unread">
+                    <img src="./img/chloe.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Detective</h4>
+                        <p class="message__content">Where are you Lucifer?</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Now</span>
+                        <span class="message__count">3</span>
+                    </p>
+                </div>
+                <div class="message ">
+                    <img src="./img/maze.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Maze</h4>
+                        <p class="message__content">You: Where is my favorite toy?</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Fri</span>
+                        <span class="message__count"></span>
+                    </p>
+                </div>
+                <div class="message unread">
+                    <img src="./img/amen.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Brother</h4>
+                        <p class="message__content">How is it going , Brother?</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Fri</span>
+                        <span class="message__count">1</span>
+                    </p>
+                </div>
+                <div class="message">
+                    <img src="./img/linda.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Dr.Linda</h4>
+                        <p class="message__content">You:I'll deliver the payment later.</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Thu</span>
+                        <span class="message__count"></span>
+                    </p>
+                </div>
+                <div class="message ">
+                    <img src="./img/trixie.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Little Human</h4>
+                        <p class="message__content">Where is the detective?</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Wed</span>
+                        <span class="message__count"></span>
+                    </p>
+                </div>
+                <div class="message">
+                    <img src="./img/ella.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Ms. Lopez</h4>
+                        <p class="message__content">Hey Lucifer! Want a hug?</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Tue</span>
+                        <span class="message__count"></span>
+                    </p>
+                </div>
+                <div class="message unread">
+                    <img src="./img/dan.jpg" alt="sender" class="message__sender">
+                    <div class="message__text">
+                        <h4 class="message__name">Detective Douche</h4>
+                        <p class="message__content">We are not friends.</p>
+                    </div>
+                    <p class="message__date">
+                        <span class="message__day">Mon</span>
+                        <span class="message__count">3</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chatbox">
+            <div class="chatbox__head">
+                <h2 class="chatbox__name">
+                    Detective <span class="chatbox__status-sign"></span>
+                <span class="chatbox__status">Active Now</span>
+                </h2>
+
+                <button class="chatbox__icon icon"><i class="icon fas fa-video"></i></button>
+                <button class="chatbox__icon icon"><i class="icon fas fa-phone"></i></button>
+                <button class="chatbox__icon icon"><i class="icon fas fa-ellipsis-v"></i></button>
+            </div>
+
+            <div class="chatbox__body">
+                <div class="chat chat-left">
+                    <img src="./img/chloe.jpg" alt="" class="chat__img">
+                    <p class="chat__content">
+                        I need you right now. Where are you
+                    </p>
+                    <span class="chat__time">18:23</span>
+                </div>
+                <div class="chat chat-right">
+                    <img src="./img/lucifer.png" alt="" class="chat__img">
+                    <span class="chat__time">18:23</span>
+                    <p class="chat__content">
+                        Just wait detective. I'm a litle busy
+                    </p>
+                </div>
+                <div class="chat chat-left">
+                    <img src="./img/chloe.jpg" alt="" class="chat__img">
+                    <p class="chat__content">
+                        Where are you Lucifer?
+                    </p>
+                    <span class="chat__time">18:24</span>
+                </div>
+                <div class="chat chat-right">
+                    <img src="./img/lucifer.png" alt="" class="chat__img">
+                    <span class="chat__time">18:25</span>
+                    <p class="chat__content">
+                        Typing...
+                    </p>
+                </div>
+            </div>
+
+            <div class="chatbox__bottom">
+                <button class="chatbox__btn"><i class="fas fa-smile icon"></i></button>
+                <button class="chatbox__btn"><i class="fas fa-paperclip icon"></i></button>
+                <button class="chatbox__btn"><i class="fas fa-image icon"></i></button>
+                <input type="text" class="chatbox__input" placeholder="Send a message">
+                <button class="chatbox__send icon"><i class="fas fa-paper-plane icon"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const themeBtn = document.querySelector('.app__theme');
+        const components = document.querySelectorAll('.form,.inbox__body,.chatbox__head,.chatbox__body,.chatbox__bottom,.chatbox__btn');
+        const chats = document.querySelectorAll('.chat__content');
+        const inputs = document.querySelectorAll('[type="text"]');
+        const icons = document.querySelectorAll('.icon');
+        themeBtn.addEventListener('click',()=>{
+            components.forEach(comp=>{
+                comp.classList.toggle('darkMode');
+            });
+            chats.forEach(chat=>{
+                chat.classList.toggle('darkMode2');
+            });
+            inputs.forEach(input=>{
+                input.classList.toggle('darkMode');
+            })
+            icons.forEach(icon=>{
+                icon.classList.toggle('darkMode');
+            })
+        });
+    </script>
+</body>
+</html>
